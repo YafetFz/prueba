@@ -563,7 +563,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 436px) {
 
     .logo{
-        width: 66%;
+        width: 60%;
         height: 30%;
         border: solid 2px #949699;
         box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black;
@@ -580,7 +580,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .carrucel{
-        height: 27vh;
+        height: 30vh;
     }
     
     .catalogo_list{
