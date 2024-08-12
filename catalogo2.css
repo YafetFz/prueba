@@ -1,0 +1,627 @@
+
+/* Atrbutos para la pagina */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PLUTO SANS', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px; 
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #88CEF0;
+    border-radius: 20px; 
+}
+  
+  
+
+/* Atrbutos para la barra de navegacion */
+.navegacion{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    user-select: none;
+    width: 100%;
+    height: 11.5vh;
+    padding: 20px;
+    gap: 15px;
+    background-color: #88CEF0;
+    border-bottom: 3px solid #DB4736;
+
+}
+
+/* Configuracion de la barra del menu de navegacion */
+.menu{
+    position: absolute;
+    top: 11.5vh;
+    right: 0;
+    width: 10%;
+    z-index: 1;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: ghostwhite;
+    background-color: #88CEF0;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    padding-top: 5px;
+}
+
+/* Configuracion de los enlaces del menu */
+.opciones{
+    user-select: none;
+    display: none;
+    align-items: center;
+    flex-flow: wrap row;
+}
+
+.opciones *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    color: ghostwhite;
+}
+
+.inicio{
+    margin-top: 10px;
+}
+
+.inicio,.categoria,.contacto{
+    height: 10vh;
+    background-color: #ffffff;
+    border-bottom: rgb(199,199,199) 1px solid;
+}
+
+.inicio i,.categoria i,.contacto i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#88CEF0;
+    flex-basis: 30%;
+    padding: 5px;
+}
+
+.opciones a{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-basis: 80%;
+    width: 70%;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #949699;
+}
+
+
+/* Propiedades para la imagen y el tamaño del carrucel */
+.carrucel{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0.5%;
+    transition: all 0.5s;
+}
+
+.carrucel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* Propiedades para el catalogo (boton)*/
+.catalogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 28px;
+    color: ghostwhite;
+    gap:10px
+}
+
+/* Propiedades de la lista de las diferentes categorias */
+.catalogo_list{
+    z-index: 1;
+    width: 90%;
+    height: 450px;
+    padding: 5px;
+    gap: 5px;
+    top: 15vh;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap row;
+    background-color: ghostwhite;
+    border-top: solid 5px #88CEF0;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px rgb(63, 62, 62);
+}
+
+
+.item{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 30%;
+    height: 11%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #88CEF0;
+    transition: all 0.5s;
+    font-weight: 500;
+    font-size: 15.5px;
+    
+}
+
+.to,.indu,.comer,.ense,.actalo{
+    box-shadow: 0 2px 1px #DB4736;
+}
+
+.item:hover{
+    cursor: pointer;
+    background-color: ghostwhite;
+    box-shadow: 0 0 5px 2.5px #88CEF0;
+    color: black;
+}
+
+
+/* Propiedades del los textos */
+
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    color: #88CEF0;
+    gap: 10px;
+}
+
+.texto h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    font-size: 40px;
+}
+
+.texto p{
+    font-size: 25px;
+}
+
+.titulocat{
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #88CEF0;
+    border-bottom: 3px solid #DB4736;
+}
+
+/* Propiedades de el contenedor que muestra las imagenes de los emprendedores */
+.empresas{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #DB4736;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-flow: row wrap;
+    padding: 10px;
+    padding-bottom: 30px;
+    gap: 25px;
+}
+
+.emp{
+    flex-basis: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 350px;
+    box-shadow: 0 0 5px 0.5px gray;
+    transition: all 0.5s;
+}
+
+.emp:hover{
+    transform: translateY(-3%);
+}
+
+.emp img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.BN img ,.CAP img ,.TY img{
+    object-fit: contain;
+}
+
+.emp a{
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #88CEF0;
+    color: white;
+    font-size: 18px;
+    
+}
+
+/* Propiedades para el footer */
+.baner{
+	width: 100%;
+	top: 0;
+	left: 0;
+    margin: 15px;
+	padding: 0px;
+	background: #ffffff;
+}
+
+.footer {
+	position: relative;
+	width: 100%;
+	background: #88CEF0;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+
+  .footer a{
+    font-size: 30px;
+  }
+  
+  .social-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 10px 5px;
+	flex-wrap: wrap;
+  }
+  
+  .icon-elem {
+	list-style: none;
+  }
+  
+  .icon {
+	color: white;
+	font-size: 32px;
+	display: inline-block;
+	margin: 0 10px;
+	transition: 0.5s;
+
+  }
+  
+  .icon:hover {
+	transform: translateY(-10px);
+  }
+  
+  .menu1 {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+  }
+  
+  .menu-elem {
+	list-style: none;
+  }
+
+  .menu-icon {
+	color: white;
+	font-size: 20px;
+	font: 150% pluto sans;
+	display: inline-block;
+	text-decoration: none;
+	margin: 5px 10px;
+	opacity: 0.5;
+	transition: 0.3s;
+  }
+  
+  .menu-icon:hover {
+	opacity: 1;
+  }
+  
+  .text {
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 22px;
+  }
+  
+.fondo{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+.puerta1,.puerta2{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: white;
+}
+
+.puerta2{
+    right: 0;
+}
+
+.logo{
+    width: 20%;
+    height: 35%;
+    background: #88CEF0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 2px #949699;
+    box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black;
+    animation: flotar 1.5s infinite ;
+    transition: all 1.5s;
+    
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.llenado{
+    width: 35%;
+    height: 3%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 65%;
+    left: 50%;
+    transition: all 1.5s;
+}
+
+.porcentaje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    background: #88CEF0;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+
+
+@keyframes desplegar{
+    0%{
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(3%);
+    }
+}
+
+@keyframes ocultar{
+    0%{
+        opacity: 1;
+        transform: translateX(3%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+}
+
+@keyframes pt1{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes pt2{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes flotar{
+    0%{
+        transform: translate(-50%,-65%) ;
+    }
+
+    50%{
+        transform: translate(-50%,-50%) ;
+    }
+
+    100%{
+        transform: translate(-50%,-65%) ;
+    }
+}
+
+/* reponsive en tablets */
+
+@media only screen and (max-width: 760px) {
+
+    .logo{
+        width: 30%;
+        height: 30%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .llenado{
+        width: 45%;
+        height: 3%;
+        top: 65%;
+    }
+
+    .carrucel{
+        height: 68vh;
+        margin: 0;
+    }
+
+    .carrucel img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .item{
+        font-size: 13.5px;
+    }
+
+    .menu{
+        width: 15%;
+        font-size: 25px;
+    }
+    
+    .opciones a{
+        font-size: 17px;
+    }
+
+    .texto h1{
+        font-size: 30px;
+    }
+
+    .texto p{
+        font-size: 19px;
+    }
+
+    .titulocat{
+        font-size: 43px;
+    }
+
+    .emp{
+        flex-basis: 28%;
+        height: 260px;
+    }
+
+    .emp a{
+        font-size: 15px;
+    }
+
+    .baner img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+}
+
+@media only screen and (max-width: 436px) {
+
+    .logo{
+        width: 50%;
+        height: 30%;
+        border: solid 2px #949699;
+        box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black;
+    }
+
+    .llenado{
+        width: 80%;
+        height: 3%;
+        top: 65%;
+    }
+
+    .catalogo *{
+        font-size: 25px;
+    }
+
+    .carrucel{
+        height: 40vh;
+        margin: 0;
+    }
+    
+    .catalogo_list{
+        width: 100%;
+        height: auto;
+    }
+
+    .item{
+        flex-basis: 40%;
+        font-size: 10.5px;
+        height: 38px;
+    }
+
+    .menu{
+        width: 20%;
+        font-size: 20px;
+    }
+    
+    .texto h1{
+        font-size: 18px;
+    }
+
+    .texto p{
+        font-size: 14px;
+    }
+
+    .titulocat{
+        font-size: 30px;
+    }
+
+    .emp{
+        flex-basis: 40%;
+        height: 200px;
+    }
+
+    .emp a{
+        font-size: 13.5px;
+    }
+
+    .footer a{
+        font-size: 25px;
+    }
+}
