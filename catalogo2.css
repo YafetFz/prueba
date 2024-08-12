@@ -564,7 +564,7 @@ body::-webkit-scrollbar-thumb {
 
     .logo{
         width: 65%;
-        height: 30%;
+        height: 25%;
         border: solid 2px #949699;
         box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black;
     }
@@ -580,7 +580,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .carrucel{
-        height: 35vh;
+        height: 30vh;
         margin: 0;
     }
     
