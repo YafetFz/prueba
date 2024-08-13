@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
         opciones.style.display = "flex";
 
         if (windowWidth <= 436) {
-            menu.style.width = "35%";
+            menu.style.width = "40%";
 
         } else if (windowWidth <= 760) {
             menu.style.width = "30%";
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function(){
         menu.style.opacity = "0.8";
 
         if (windowWidth <= 436) {
-            menu.style.width = "20%";
+            menu.style.width = "25%";
 
         } else if (windowWidth <= 760) {
             menu.style.width = "15%";
