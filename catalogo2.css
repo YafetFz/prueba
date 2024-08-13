@@ -49,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+
 /* Configuracion de la barra del menu de navegacion */
 .menu{
     position: absolute;
@@ -60,7 +61,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 35px;
     color: ghostwhite;
     background-color: #88CEF0;
     opacity: 0.8;
@@ -68,6 +69,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 2px;
     padding-top: 5px;
 }
+
 
 /* Configuracion de los enlaces del menu */
 .opciones{
@@ -101,7 +103,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.inicio i,.categoria i,.contacto i{
+.inicio ion-icon,.categoria ion-icon,.contacto ion-icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,10 +147,11 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 35px;
     color: ghostwhite;
     gap:10px
 }
+
 
 /* Propiedades de la lista de las diferentes categorias */
 .catalogo_list{

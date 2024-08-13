@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(){
     const opciones = document.querySelector(".opciones");
     const barra = document.querySelector(".barra");
     const body = document.querySelector("body");
-    const html = document.querySelector("html");
     const windowWidth = window.innerWidth;
 
     let click2 = 0;
@@ -54,14 +53,12 @@ document.addEventListener("DOMContentLoaded", function(){
     // Funcion que hace que el catalogo se abra y se cierre al hacer click en un boton 
     catalogo.addEventListener("mousedown", function(){
         if (click2 == 0) {
-            catalogo.innerHTML = `<i class="fa-solid fa-xmark"></i> Categorias`;
-            catalogo.style.fontSize = "30x";
+            catalogo.innerHTML = `<ion-icon name="close-outline"></ion-icon> Categorias`;
             catalogo_list.style.display = "flex";
             catalogo_list.style.animation = "desplegar 0.3s linear forwards";
             click2 = 1;
         } else {
-            catalogo.innerHTML = `<i class="fa-solid fa-layer-group"></i> Categorias`;
-            catalogo.style.fontSize = "28px";
+            catalogo.innerHTML = `<ion-icon name="layers-outline"></ion-icon> Categorias`;
             catalogo_list.style.animation = "ocultar 0.2s linear forwards";
             setTimeout(function(){
                 catalogo_list.style.display = "none";
