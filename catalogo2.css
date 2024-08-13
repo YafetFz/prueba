@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
     color: ghostwhite;
     background-color: #88CEF0;
     opacity: 0.8;
-    transition: all 0.3s ease;
+    transition: width 0.3s ease;
     border-radius: 2px;
     padding-top: 5px;
 }
