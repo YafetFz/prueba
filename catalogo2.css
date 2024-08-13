@@ -207,7 +207,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-    text-shadow: 0 0 2px #88CEF0;
+    text-shadow: 1px 1px 1px black;
+    color: #88CEF0;
     gap: 10px;
 }
 
@@ -232,6 +233,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 20px;
     color: #DB4736;
     border-bottom: 3px solid #DB4736;
+    text-shadow: 1px 1px 1px black;
 }
 
 /* Propiedades de el contenedor que muestra las imagenes de los emprendedores */
@@ -284,6 +286,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     text-align: center;
     background-color: #DB4736;
+    font-weight: bold;
     color: white;
     font-size: 18px;
     
@@ -376,6 +379,7 @@ body::-webkit-scrollbar-thumb {
 	margin-top: 15px;
 	margin-bottom: 10px;
 	font-size: 22px;
+    text-shadow: 1px 1px 1px black;
   }
   
 .fondo{
