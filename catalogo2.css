@@ -284,7 +284,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     text-align: center;
     background-color: #88CEF0;
-    color: white;
+    color: black;
+    text-shadow: 0 0 2px white;
     font-size: 18px;
     
 }
