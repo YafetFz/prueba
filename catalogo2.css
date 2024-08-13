@@ -2,6 +2,7 @@
 /* Atrbutos para la pagina */
 
 *{
+    max-width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -563,6 +564,10 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 436px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     .llenado{
         width: 80%;
         height: 3%;
@@ -574,7 +579,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .carrucel{
-        height: 35vh;
+        height: 31vh;
     }
     
     .catalogo_list{
