@@ -70,7 +70,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
     op.forEach((caja)=>{
         caja.addEventListener("mousedown",function(){
+            
             click2 = 0;
+
+            barra.style.display = "block";
+            opciones.style.display = "none";
+            menu.style.opacity = "0.8";
+            menu.style.zIndex = "1";
+
+            if (windowWidth <= 436) {
+                menu.style.width = "20%";
+
+            } else if (windowWidth <= 760) {
+                menu.style.width = "15%";
+
+            } else{
+                menu.style.width = "10%";
+            }
+            
             catalogo_list.style.animation = "ocultar 0.2s linear forwards";
             setTimeout(function(){
                 catalogo_list.style.display = "none";
