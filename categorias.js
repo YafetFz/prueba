@@ -2,7 +2,27 @@
 document.addEventListener("DOMContentLoaded", function(){
     const botones = document.querySelectorAll(".item");
     const emp = document.querySelectorAll(".emp");
+    const catalogo = document.querySelector(".catalogo");
+    
+    catalogo.addEventListener("mousedown",function(){
+        emp.forEach((elemento) => {
+            elemento.style.scale = 0;
+            setTimeout(function(){
+                elemento.style.display = "none";
+            },1000);
+        });
 
+        setTimeout(function(){
+            emp.forEach((elemento) =>{
+                elemento.style.display = "flex";
+                setTimeout(function(){
+                    elemento.style.scale = 1;
+                },500);
+            });
+        },1500);
+    });
+
+    
     botones.forEach((item,index) =>{
         switch (index) {
             case 0:

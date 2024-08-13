@@ -17,7 +17,7 @@ body{
     width: 100vw;
     height: auto;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 body::-webkit-scrollbar {
@@ -112,7 +112,8 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
 }
 
-.opciones a{
+
+.opciones a,.categoria p{
     display: flex;
     align-items: center;
     justify-content: left;
@@ -122,6 +123,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     text-decoration: none;
     color: #949699;
+    cursor: pointer;
 }
 
 
@@ -152,7 +154,6 @@ body::-webkit-scrollbar-thumb {
     gap:10px
 }
 
-
 /* Propiedades de la lista de las diferentes categorias */
 .catalogo_list{
     z-index: 1;
@@ -161,6 +162,7 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
     gap: 5px;
     top: 15vh;
+    right: 0;
     position: absolute;
     display: none;
     align-items: center;
@@ -385,7 +387,7 @@ body::-webkit-scrollbar-thumb {
     text-shadow: 1px 1px 1px black;
   }
   
-.fondo{
+/* .fondo{
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -413,8 +415,6 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     transform: translate(-50%,-65%);
     overflow: hidden;
-    /* border: solid 2px #949699;
-    box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black; */
     animation: flotar 1.5s infinite ;
     transition: all 1.5s;
     
@@ -448,32 +448,32 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.2s;
     border: solid 1px #949699;
     box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black;
-}
+} */
 
 
 @keyframes desplegar{
     0%{
         opacity: 0;
-        transform: translateX(-5%);
+        transform: translateX(3%);
     }
     100%{
         opacity: 1;
-        transform: translateX(3%);
+        transform: translateX(-9%);
     }
 }
 
 @keyframes ocultar{
     0%{
         opacity: 1;
-        transform: translateX(3%);
+        transform: translateX(-9%);
     }
     100%{
         opacity: 0;
-        transform: translateX(-5%);
+        transform: translateX(3%);
     }
 }
 
-@keyframes pt1{
+/* @keyframes pt1{
     0%{
         transform: translateX(0%);
     }
@@ -503,7 +503,7 @@ body::-webkit-scrollbar-thumb {
     100%{
         transform: translate(-50%,-65%) ;
     }
-}
+} */
 
 /* reponsive en tablets */
 
@@ -535,7 +535,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 25px;
     }
     
-    .opciones a{
+    .opciones a,.categoria p{
         font-size: 17px;
     }
 
@@ -590,7 +590,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     .catalogo_list{
-        width: 100%;
+        width: 90.5%;
         height: auto;
     }
 
@@ -601,8 +601,12 @@ body::-webkit-scrollbar-thumb {
     }
 
     .menu{
-        width: 25%;
+        width: 20%;
         font-size: 20px;
+    }
+
+    .opciones a,.categoria p{
+        font-size: 15px;
     }
     
     .texto h1{
