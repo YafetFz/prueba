@@ -234,7 +234,7 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #DB4736;
+    color: #88CEF0;
     border-bottom: 3px solid #DB4736;
     text-shadow: 1px 1px 1px black;
 }
@@ -288,9 +288,9 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #DB4736;
+    background-color: #88CEF0;
     font-weight: bold;
-    color: white;
+    color:black;
     font-size: 18px;
     
 }
