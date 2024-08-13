@@ -207,7 +207,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-    color: #88CEF0;
+    text-shadow: 0 0 2px #88CEF0;
     gap: 10px;
 }
 
@@ -230,7 +230,7 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #88CEF0;
+    color: #DB4736;
     border-bottom: 3px solid #DB4736;
 }
 
@@ -283,9 +283,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #88CEF0;
-    color: black;
-    text-shadow: 0 0 2px white;
+    background-color: #DB4736;
+    color: white;
     font-size: 18px;
     
 }
@@ -372,7 +371,7 @@ body::-webkit-scrollbar-thumb {
   }
   
   .text {
-	color: white;
+    color: white;
 	text-align: center;
 	margin-top: 15px;
 	margin-bottom: 10px;
