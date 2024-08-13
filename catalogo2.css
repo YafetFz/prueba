@@ -93,6 +93,11 @@ body::-webkit-scrollbar-thumb {
     border-bottom: rgb(199,199,199) 1px solid;
 }
 
+.contacto{
+    border-bottom: none;
+}
+
+
 .inicio i,.categoria i,.contacto i{
     display: flex;
     align-items: center;
@@ -387,7 +392,7 @@ body::-webkit-scrollbar-thumb {
 
 .logo{
     width: 20%;
-    height: 35%;
+    height: auto;
     background: #88CEF0;
     position: absolute;
     display: flex;
@@ -396,7 +401,6 @@ body::-webkit-scrollbar-thumb {
     top: 40%;
     left: 50%;
     transform: translate(-50%,-65%);
-    border-radius: 50%;
     overflow: hidden;
     border: solid 2px #949699;
     box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black;
@@ -417,7 +421,7 @@ body::-webkit-scrollbar-thumb {
     height: 3%;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 65%;
+    top: 70%;
     left: 50%;
     transition: all 1.5s;
 }
@@ -431,6 +435,8 @@ body::-webkit-scrollbar-thumb {
     background: #88CEF0;
     border-radius: 50px;
     transition: all 0.2s;
+    border: solid 1px #949699;
+    box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black;
 }
 
 
@@ -494,7 +500,7 @@ body::-webkit-scrollbar-thumb {
 
     .logo{
         width: 30%;
-        height: 30%;
+        height: auto;
         top: 40%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -564,7 +570,7 @@ body::-webkit-scrollbar-thumb {
 
     .logo{
         width: 55%;
-        height: 30%;
+        height: auto;
         border: solid 2px #949699;
         box-shadow: 0 0 7px 5px #88CEF0, 0 5px 20px black;
     }
